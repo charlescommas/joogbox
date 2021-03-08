@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/yellow"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    tools:context=".AboutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/brown"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/emptySpace1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:orientation="vertical"/>
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:typeface="serif"
+            android:textColor="@color/yellow"
+            android:text="About JoogBox"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:typeface="serif"
+            android:textColor="@color/yellow"
+            android:text="v 2.0"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:paddingBottom="16dp"
+            android:id="@+id/descMain">
+
+            <TextView
+                android:id="@+id/desc1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp"
+                android:background="@color/yellow"
+                android:text="JoogBox is a music player application, inspired by partially automated music-playing device called JukeBox.
+\n\nThe term 'Joog' is an actual derived word in 'JukeBox',
+from Gullah language meaning 'disorderly, rowdy, or wicked'.\n\n
+The song used in this app is 'Pretty Woman' by Roy Orbison.
+It was recorded and released in August 1964." />
+
+            <TextView
+                android:id="@+id/desc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/yellow"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:typeface="serif"
+                android:text="SPECIAL THANKS" />
+
+            <TextView
+                android:id="@+id/desc3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp"
+                android:textSize="10sp"
+                android:background="@color/yellow"
+                android:text="- Sara and her YouTube video at https://youtu.be/zCYQBIcePaw\n
+- Dev Team who made Color Picker at https://www.w3schools.com\n
+- Designer friends at www.pngmart.com &amp; www.pngimg.com\n
+- Friends at www.musixmatch.com for providing the lyrics\n
+- Our best lecturer &amp; supporting lab assistants at college ~\n
+\n...and of course, we are nothing without them...\n\n
+- Our beloved friends at www.stackoverflow.com"
+                />
+
+            <TextView
+                android:id="@+id/desc4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/yellow"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:typeface="serif"
+                android:text="CREATED BY" />
+
+            <TextView
+                android:id="@+id/desc5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp"
+                android:background="@color/yellow"
+                android:text="NIM : 000 000 22805\nName : Charles 'Jack' M. R. Commas\nSubject (Class) : Mobile Programming (B)" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:background="@color/yellow"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="32dp"
+        android:background="@color/brown">
+
+        <Button
+            android:id="@+id/btnAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/lightBrown"
+            android:text="About"
+            android:textColor="#fff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textColor="@color/yellow"
+            android:text="Pretty Woman"
+            android:typeface="serif"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/disk"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textColor="@color/yellow"
+            android:typeface="serif"
+            android:text="Roy Orbison"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/disk"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+        <ImageView
+            android:id="@+id/disk"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/records"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="320dp"
+            android:layout_height="110dp"
+            android:background="@color/yellow"
+            app:layout_constraintBottom_toTopOf="@+id/btnPlay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/disk">
+            <TextView
+                android:id="@+id/lyrics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="\n\nPRETTY WOMAN\nBy: Roy Orbison\n\n\n\nPretty woman\nwalking down the street\n \nPretty woman\nthe kind i like to meet\n\nPretty woman\n \n\nI don't believe you\nyou're not the truth\n \nNo one could look\nas good as you\n \n \n \n \n\n\nMerci ~ \n \n \n \n \n \nPretty woman\n \n \nwon't you pardon me?\n \n \nPretty woman\n \nI could't help but see\n \n \n \nPretty woman\n \n \n \nthat you look lovely\n \n \nas can be\n \n \n \nAre you lonely\n \n \njust like me?\n \n \n\n \n \n \n \n \nGrrr ~\n \n \n\n \n \n \n \n \n \n \n \n \nPretty woman\n \nstop awhile\n \n \n \n \n \nPretty woman \n \ntalk awhile\n \n \n \n \n\nPretty woman\n \ngive your smile\n \n \nto me\n \n \n \n \n \n \n \n \n\nPretty woman\n \n \n \nYeah, yeah, yeah\n \n \n \n \nPretty woman\n \n \nlook my way\n \n \n \n \nPretty woman\n \nsay you'll stay\n \n \n \n \nwith me\n \n \n \n \n \n \n\n\n'Cause I need you\n \n \n \n \n \nI'll treat you right\n\n  \n \n \n \n \n \nCome with me, baby\n \n \n \n \n \n \n \n \nBe mine\n\ntonight\n \n \n \n \n \n \n \n \n \n \n \n \n \n \nPretty woman\n \n \n \ndon't walk on by\n \n \n\nPretty woman\n \n \ndon't make me cry\n \n \n \nPretty woman\n \n \n \n \ndon't walk away\n \n \n \nHey\n \n \n \n \n \n \nOkay\n \n \n \n \nIf that's the way it must be\n \n \n \nOkay\n \n \n \n \nI guess I'll go on home\n \n \nit's late\n \nThere'll be tomorrow night\n \n \nBut wait\n \nWhat do I see?\n \n \n \n \n \n \n \n \nIs she walking back to me?\n \n \n \n \n Yeah\nShe's walking back to me\n \n \nOhh-ohhhh\n Pretty woman\n \n~\n "
+                />
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/play"
+            android:onClick="btnPlayClick"
+            android:backgroundTint="@color/yellow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scrollView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
